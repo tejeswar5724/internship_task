@@ -1,0 +1,34 @@
+CREATE SCHEMA `moviesdatabase` ;
+
+#Create Table
+CREATE TABLE `moviesdatabase`.`movies_table` (
+  `movie__ID` INT NOT NULL,
+  `movie__Name` VARCHAR(45) NOT NULL,
+  `movie__Actor` VARCHAR(45) NOT NULL,
+  `movie__Actress` VARCHAR(45) NOT NULL,
+  `movie__Director` VARCHAR(45) NOT NULL,
+  `movie__releasedate` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`movie__ID`));
+
+#Insert command to add data
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('1', 'Maharshi', 'Mahesh Babu', 'Pooja Hegde', 'Vamsi Paidipally', '2019');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('2', 'Saaho', 'Prabhas', 'Shraddha Kapoor', 'Sujeeth', '2019');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('3', 'Magadheera', 'Ram Charan', 'Kajal', 'Raajamouli', '2009');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('4', 'Eega', 'Nani', 'Samantha', 'S S Rajamouli', '2012');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('5', 'RRR', 'NTR, Ram Charan', 'Alia Bhat', 'S S Rajamouli', '2022');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('6', 'Legand', 'Balakrisha', 'Sonal Chauhan', 'Boyapati Srinu', '2014');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('7', 'Jagadam', 'Ram Pothineni', 'Isha Shahani', 'Sukumar', '2007');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('8', 'MCA', 'Nani', 'Sai Pallavi', 'Venu Sriram', '2017');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('9', 'Maestro', 'Nithin', 'Tamannah', 'Merlapaka Gandhi', '2021');
+INSERT INTO `moviesdatabase`.`movies_table` (`movie_ID`, `movie_Name`, `movie_Actor`, `movie_Actress`, `movie_Director`, `movie_releasedate`) VALUES ('10', 'Robo', 'Rajinikanth', 'Aiswarya Rai', 'Shankar', '2005');
+
+
+#Select statement tp retrive the data
+
+SELECT * FROM moviesdatabase.movies_table;
+
+SELECT * FROM moviesdatabase.movies_table WHERE movie_Actor = "Prabhas";
+
+SELECT * FROM moviesdatabase.movies_table WHERE movie_Director = "Sujeeth";
+
+SELECT * FROM moviesdatabase.movies_table WHERE movie_releasedate = "2019";
